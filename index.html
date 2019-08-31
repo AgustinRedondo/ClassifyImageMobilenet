@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+    <title>Image Classifier</title>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs@1.2.8/dist/tf.min.js"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.4/dist/mobilenet.min.js"></script>
+
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body>
+        <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Image Classifier</h1>
+    <p class="lead">Hello World, this is my first project. Here, we will try to classify an image with an already pretrained model, Mobilenet.</p>
+  </div>
+</div>
+        <input type="file" id="file" accept="image/*" onchange="fileReader(event)" style="display: none;"/>
+        <label class="btn btn-primary" for="file">Choose File</label>
+     <section class="section heading" id="home">
+        <div class="container">
+            <div class="row">            
+                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App"> 
+                </div>
+        </div>
+</section>
+      <div class="section img-display">
+        <img id="display-img"/>
+      
+      </div>
+      <div class="section submit">
+        <input class="btn btn-primary " type="submit" value="Classify This Image" id="run_model"/>
+      </div>
+      <div class="section response">
+        <div id="output"></div>
+      </div>
+  
+    <script src="index.js"></script>
+
+  </body>
+
+</html>

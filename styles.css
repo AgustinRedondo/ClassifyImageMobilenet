@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-size: 18px;
+  font-family: "Roboto";
+  background: #0;
+  border: 0;
+  outline: 0
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+  color: #0;
+  margin-bottom: 20px;
+}
+
+.img-display{
+  
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+
+.submit > input:hover, .upload > label:hover{
+  cursor: pointer;
+  color: #39ff14;
+}
+
+
+
+
+
